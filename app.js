@@ -27,7 +27,7 @@ function sortearAmigo(){
     if (amigos.length == 0){
         alert("Adicionar os nomes dos seus amigos primeiro.");
     } else {
-        let sorteioNumber = Math.floor(Math.random() * amigos.length + 1);
+        let sorteioNumber = Math.floor(Math.random() * amigos.length);
         let amigoSorteado = amigos[sorteioNumber];
         let mostrarResultado = document.getElementById("resultado");
         mostrarResultado.innerHTML = `${amigoSorteado}`;
